@@ -1,61 +1,52 @@
 # PixelPlaza 🎉
 
-PixelPlaza is a social party-world web game — a hybrid of VRChat + Club Penguin + Jackbox + Mario Party.  
-It’s a cozy multiplayer hub where friends can hang out, chat, and jump into mini-games that range from chill to chaotic.
+PixelPlaza is a social party-world desktop game—a cozy multiplayer hub inspired by VRChat, Club Penguin, Jackbox, and Mario Party.  
+Meet friends, chat, and dive into chill or chaotic mini-games—all on your desktop, built without heavyweight engines!
 
-## 🚀 Features (Planned)
+## 🚀 New Approach
 
-- 🌎 **Shared social hub:** Customize your avatar, emote, and explore the plaza.
-- 🎮 **Party-style mini-games:** Jump into challenges inspired by Mario Party & Jackbox.
-- 🤝 **Cross-platform:** Play on Web, PC, Mobile, and (future) Consoles.
-- 🛠️ **User creativity:** Players can host games, customize rooms, and maybe even design their own challenges.
-- 🎤 **Voice & text chat:** Built-in communication for a lively social atmosphere.
+- **No Unity, Unreal, or web browser required!**
+- Modern desktop application built using a mix of languages:
+  - **C# (Avalonia UI)** for a beautiful, cross-platform desktop client
+  - **Node.js or Python** for a real-time multiplayer backend
+- Networking via WebSockets for seamless, cross-OS multiplayer fun.
+
+## 🌟 Core Features (Planned)
+
+- 🌎 Shared social hub: customize your avatar, emote, and explore the plaza.
+- 🎮 Party-style mini-games: jump into challenges inspired by Mario Party & Jackbox.
+- 🛠️ User creativity: host games, customize rooms, and maybe design your own challenges.
+- 🎤 Voice & text chat: built-in communication for a lively social atmosphere.
+- 🤝 Cross-platform: runs on Windows, Mac, and Linux.
 
 ## 🛠️ Tech Stack
 
-- **Engine:** Unity (latest LTS version)
-- **Language:** C#
-- **Networking:** Photon Fusion / NGO (Netcode for GameObjects)
-- **Platform Targets:**
-  - Web (WebGL)
-  - Desktop (Windows/Mac/Linux)
-  - Mobile (iOS/Android)
-  - Console (future support)
+- **Frontend:** C# (Avalonia UI)
+- **Backend:** Node.js or Python
+- **Networking:** WebSockets
+- **Optional:** Database (MongoDB, Postgres, or similar) for persistent data
 
-## 🎮 Planned Minigames (30 Total)
+## 🎮 Planned Minigames (sample)
 
-### 🏃‍♂️ Competitive Action
-- **Plaza Dash** – race through an obstacle course full of moving platforms and traps.
-- **Bubble Brawl** – push other players off a shrinking arena while inside bouncing bubbles.
-- **Rocket Rumble** – jetpack battle in a zero-gravity arena.
-- **Paint Panic** – cover the floor with your team’s color before time runs out.
-- **Laser Leap** – dodge lasers that sweep across the floor in patterns.
-- **Sumo Squares** – stay on your moving square while bumping others off.
-- **Hot Potato** – pass the explosive package before it blows.
-- **Treasure Tag** – steal and hold onto the golden coin the longest.
-- **Platform Plunge** – tiles fall away underfoot, last one standing wins.
-- **Fruit Frenzy** – grab the correct fruit in a crowd before it disappears.
+- Plaza Dash – obstacle course racing
+- Bubble Brawl – bounce and bump others off the platform
+- Paint Panic – cover the most ground with your color
+- Emoji Charades – emote for your team to guess
+- Trivia Tussle – answer party trivia fastest
 
-### 🧩 Puzzle / Skill
-- **Memory Match** – flip tiles to find pairs before time runs out.
-- **Rhythm Rush** – hit the beat prompts in sync with music.
-- **Code Crackers** – solve a simple logic/pattern puzzle the fastest.
-- **Pipe Panic** – rotate pipes to connect a flowing line.
-- **Spotlight Sprint** – only move while hidden in the dark, avoid the spotlight.
-- **Tower Stack** – drop blocks carefully to build the tallest tower.
-- **Maze Mayhem** – navigate a shifting maze to the exit.
-- **Guess & Go** – doors may be real or fake — find the right path.
-- **Quick Draw** – test reflexes by clicking/tapping when the signal appears.
-- **Word Whiz** – make the most words from a jumble of letters.
+## 🏗️ Project Structure
 
-### 🎭 Social / Silly
-- **Emoji Charades** – act/emote clues for your team to guess.
-- **Dance Off** – mimic dance moves in time with music.
-- **Trivia Tussle** – answer party trivia questions, fastest correct wins.
-- **Fashion Frenzy** – dress to match a random theme, players vote.
-- **Meme Mash** – caption a funny image, funniest wins (Jackbox-style).
-- **Roast or Boast** – fill in the blank sentences with silly answers.
-- **Imposter Plaza** – one player fakes tasks, others must find them (short mini version).
-- **Voice Chaos** – random voice filters while chatting, guess who’s who.
-- **Hide & Seek Lite** – one seeker, short round in a confined map.
-- **Talent Showdown** – players perform silly actions (emotes/lines), others vote.
+- `client/` – desktop app (C#, Avalonia UI)
+- `server/` – networking backend (Node.js/Python)
+- `docs/` – design docs & planning
+- `shared/` – protocol definitions, assets
+
+## ❓ Why This Approach?
+
+- 100% open source, free, and runs on almost any desktop/laptop
+- No game engine install required
+- Mixes the best of modern desktop UI with real-time multiplayer
+
+---
+
+**Join the fun—help us build the ultimate party plaza!**
