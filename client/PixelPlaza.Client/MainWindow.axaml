@@ -1,0 +1,12 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PixelPlaza.Client.MainWindow"
+        Width="400" Height="300"
+        Title="PixelPlaza">
+  <StackPanel Margin="10">
+    <TextBlock Text="PixelPlaza Desktop Client" FontWeight="Bold" FontSize="20" Margin="0,0,0,20"/>
+    <TextBox Name="ChatInput" Watermark="Type your message..." />
+    <Button Name="SendButton" Content="Send" Margin="0,10,0,0"/>
+    <ListBox Name="ChatList" Height="160" Margin="0,10,0,0"/>
+  </StackPanel>
+</Window>
