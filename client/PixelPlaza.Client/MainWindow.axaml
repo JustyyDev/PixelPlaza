@@ -1,12 +1,61 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        x:Class="PixelPlaza.Client.MainWindow"
-        Width="400" Height="300"
-        Title="PixelPlaza">
-  <StackPanel Margin="10">
-    <TextBlock Text="PixelPlaza Desktop Client" FontWeight="Bold" FontSize="20" Margin="0,0,0,20"/>
-    <TextBox Name="ChatInput" Watermark="Type your message..." />
-    <Button Name="SendButton" Content="Send" Margin="0,10,0,0"/>
-    <ListBox Name="ChatList" Height="160" Margin="0,10,0,0"/>
-  </StackPanel>
+        xmlns:d="https://github.com/avaloniaui"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PixelPlaza.Client.Views"
+        xmlns:viewmodels="clr-namespace:PixelPlaza.Client.ViewModels"
+        x:Class="PixelPlaza.Client.Views.MainWindow"
+        Width="900" Height="600"
+        Title="PixelPlaza"
+        mc:Ignorable="d">
+
+  <Window.DataContext>
+    <viewmodels:MainWindowViewModel/>
+  </Window.DataContext>
+
+  <DockPanel>
+    <!-- Menu Bar -->
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="_File">
+        <MenuItem Header="Connect" Command="{Binding ConnectCommand}"/>
+        <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
+      </MenuItem>
+      <MenuItem Header="_Options">
+        <MenuItem Header="Settings" Command="{Binding OpenSettingsCommand}"/>
+      </MenuItem>
+      <MenuItem Header="_Help">
+        <MenuItem Header="About" Command="{Binding AboutCommand}"/>
+      </MenuItem>
+    </Menu>
+
+    <!-- Status Bar -->
+    <StatusBar DockPanel.Dock="Bottom">
+      <StatusBarItem>
+        <TextBlock Text="{Binding Status}" />
+      </StatusBarItem>
+      <StatusBarItem HorizontalAlignment="Right">
+        <TextBlock Text="{Binding Username}" FontStyle="Italic"/>
+      </StatusBarItem>
+    </StatusBar>
+
+    <!-- Main Layout -->
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="180"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+
+      <!-- Sidebar Navigation -->
+      <StackPanel Grid.Column="0" Background="#2D2D40" >
+        <Button Content="Home" Command="{Binding ShowHomeCommand}" Margin="8" />
+        <Button Content="Plaza" Command="{Binding ShowPlazaCommand}" Margin="8"/>
+        <Button Content="Minigames" Command="{Binding ShowMinigamesCommand}" Margin="8"/>
+        <Button Content="Friends" Command="{Binding ShowFriendsCommand}" Margin="8"/>
+        <Button Content="Settings" Command="{Binding OpenSettingsCommand}" Margin="8"/>
+      </StackPanel>
+
+      <!-- Dynamic Main Content Area -->
+      <ContentControl Grid.Column="1" Content="{Binding CurrentView}" Margin="10"/>
+    </Grid>
+  </DockPanel>
 </Window>
