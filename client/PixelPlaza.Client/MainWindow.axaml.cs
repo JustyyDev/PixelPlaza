@@ -1,31 +1,24 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
-using System.Collections.ObjectModel;
+using Avalonia.Markup.Xaml;
+using Avalonia.Threading;
+using PixelPlaza.Client.ViewModels;
 
 namespace PixelPlaza.Client
 {
     public partial class MainWindow : Window
     {
-        private WebSocketClient wsClient;
-        private ObservableCollection<string> messages = new();
-
         public MainWindow()
         {
             InitializeComponent();
-            ChatList.Items = messages;
-            wsClient = new WebSocketClient();
-            wsClient.OnMessageReceived += msg => Dispatcher.UIThread.InvokeAsync(() => messages.Add(msg));
-            SendButton.Click += SendButton_Click;
+
+            // Set DataContext to the MainWindowViewModel instance
+            this.DataContext = new MainWindowViewModel();
         }
 
-        private async void SendButton_Click(object? sender, RoutedEventArgs e)
+        private void InitializeComponent()
         {
-            var text = ChatInput.Text;
-            if (!string.IsNullOrWhiteSpace(text))
-            {
-                await wsClient.SendAsync(text);
-                ChatInput.Text = "";
-            }
+            AvaloniaXamlLoader.Load(this);
         }
     }
 }

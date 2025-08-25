@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xaq6SqxsRN4=",
+  "dgSpecHash": "uMKHlcrg+14=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jespe\\OneDrive\\Documenten\\GitHub\\PixelPlaza\\PixelPlaza.Client\\PixelPlaza.Client.csproj",
+  "projectFilePath": "C:\\Users\\jespe\\OneDrive\\Documenten\\GitHub\\PixelPlaza\\client\\PixelPlaza.Client\\PixelPlaza.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jespe\\.nuget\\packages\\avalonia\\11.3.4\\avalonia.11.3.4.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.25547.20250602\\avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",
