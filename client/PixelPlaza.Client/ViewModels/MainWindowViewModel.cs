@@ -13,11 +13,11 @@ namespace PixelPlaza.Client.ViewModels
         public ReactiveCommand<Unit, Unit> ConnectCommand { get; }
         public ReactiveCommand<Unit, Unit> ExitCommand { get; }
         public ReactiveCommand<Unit, Unit> AboutCommand { get; }
-        public ReactiveCommand<Unit, Unit> ShowHomeCommand { get; }
-        public ReactiveCommand<Unit, Unit> ShowPlazaCommand { get; }
-        public ReactiveCommand<Unit, Unit> ShowMinigamesCommand { get; }
-        public ReactiveCommand<Unit, Unit> ShowFriendsCommand { get; }
-        public ReactiveCommand<Unit, Unit> OpenSettingsCommand { get; }
+    public ReactiveCommand<Unit, object> ShowHomeCommand { get; }
+    public ReactiveCommand<Unit, object> ShowPlazaCommand { get; }
+    public ReactiveCommand<Unit, object> ShowMinigamesCommand { get; }
+    public ReactiveCommand<Unit, object> ShowFriendsCommand { get; }
+    public ReactiveCommand<Unit, object> OpenSettingsCommand { get; }
 
         private object _currentView;
         public object CurrentView
@@ -29,7 +29,7 @@ namespace PixelPlaza.Client.ViewModels
         public MainWindowViewModel()
         {
             // TODO: Initialize commands and views for navigation
-            ConnectCommand = ReactiveCommand.Create(() => Status = "Connected!");
+            ConnectCommand = ReactiveCommand.Create(() => { Status = "Connected!"; return Unit.Default; });
             ExitCommand = ReactiveCommand.Create(() => Environment.Exit(0));
             AboutCommand = ReactiveCommand.Create(() => {/* Show about dialog */});
             ShowHomeCommand = ReactiveCommand.Create(() => CurrentView = new HomeViewModel());

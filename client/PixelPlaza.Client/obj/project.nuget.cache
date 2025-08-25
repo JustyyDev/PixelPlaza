@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uMKHlcrg+14=",
+  "dgSpecHash": "+lcMs8c0TyQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\jespe\\OneDrive\\Documenten\\GitHub\\PixelPlaza\\client\\PixelPlaza.Client\\PixelPlaza.Client.csproj",
   "expectedPackageFiles": [
@@ -19,19 +19,37 @@
     "C:\\Users\\jespe\\.nuget\\packages\\avalonia.themes.simple\\11.3.4\\avalonia.themes.simple.11.3.4.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\avalonia.win32\\11.3.4\\avalonia.win32.11.3.4.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\avalonia.x11\\11.3.4\\avalonia.x11.11.3.4.nupkg.sha512",
+    "C:\\Users\\jespe\\.nuget\\packages\\dynamicdata\\8.4.1\\dynamicdata.8.4.1.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\harfbuzzsharp\\8.3.1.1\\harfbuzzsharp.8.3.1.1.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\8.3.1.1\\harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\8.3.1.1\\harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\harfbuzzsharp.nativeassets.webassembly\\8.3.1.1\\harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\8.3.1.1\\harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\jespe\\.nuget\\packages\\reactiveui\\19.6.12\\reactiveui.19.6.12.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.9\\skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\skiasharp.nativeassets.webassembly\\2.88.9\\skiasharp.nativeassets.webassembly.2.88.9.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.9\\skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
+    "C:\\Users\\jespe\\.nuget\\packages\\splat\\14.8.12\\splat.14.8.12.nupkg.sha512",
+    "C:\\Users\\jespe\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\jespe\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512",
+    "C:\\Users\\jespe\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\jespe\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512",
     "C:\\Users\\jespe\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "PixelPlaza.Client depends on ReactiveUI (>= 19.6.6) but ReactiveUI 19.6.6 was not found. ReactiveUI 19.6.12 was resolved instead.",
+      "libraryId": "ReactiveUI",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

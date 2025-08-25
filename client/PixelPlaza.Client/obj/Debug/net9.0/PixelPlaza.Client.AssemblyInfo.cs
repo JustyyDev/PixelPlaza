@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PixelPlaza.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9aef4db9e61a1f7d1207ea980a03a3f76dc57ff5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51a6e62618d45b188755508f4ec064ad410c8f4b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PixelPlaza.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PixelPlaza.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
